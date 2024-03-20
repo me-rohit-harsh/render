@@ -1,7 +1,7 @@
 # Stage 1: Build the Maven project
 FROM maven:3.8.3-openjdk-17 AS build
 WORKDIR /app
-COPY pom.xml .
+COPY ../pom.xml .
 RUN mvn install
 
 # Copy the rest of the project and build it

@@ -2,7 +2,7 @@
 FROM maven:3.8.3-openjdk-17 AS build
 WORKDIR /app
 COPY pom.xml .
-RUN mvn clean package -DskipTests
+RUN mvn dependency:go-offline
 
 # Copy the rest of the project and build it
 COPY . .

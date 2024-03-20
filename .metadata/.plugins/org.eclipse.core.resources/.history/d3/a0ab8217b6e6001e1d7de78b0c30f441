@@ -1,0 +1,5 @@
+package com.test.render.controller;
+
+public class HomeController {
+
+}
